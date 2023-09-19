@@ -11,6 +11,10 @@ import AOS from 'aos';
 import Isotope from 'isotope-layout';
 import Waypoint from 'waypoints/lib/noframework.waypoints';
 
+
+  
+
+
 import GLightbox from 'glightbox';
 
 function App() {
@@ -372,7 +376,7 @@ function App() {
                     <h1 class="price_text">2,000,000</h1>
                     <h1 class="price_text">VND/100gr</h1>
                   </div>
-                </div>7
+                </div>
               </div>
             </div>
           </div>

@@ -553,25 +553,30 @@ i.fa.fa-angle-left {
     width: 100%;
     float: left;
     background-color: #f1f1f1;
-    height: auto;
+ 
     border-radius: 5px;
     padding: 90px 0px 70px 0px;
     margin-top: 30px;
+    display: flex;
+    align-items: center; 
 }
 
 .left_main {
     width: 50%;
     float: left;
+    flex: 1;
 }
 
 .middle_main {
     width: 2%;
     float: left;
+    flex-basis: 2%;
 }
 
 .right_main {
     width: 48%;
     float: left;
+    flex: 1;
 }
 
 .cup_img_1 {
@@ -582,7 +587,7 @@ i.fa.fa-angle-left {
 }
 
 .border_10 {
-    width: 5px;
+    width: 0.2rem;
     float: left;
     background-color: #8d5e3e;
     height: 100px;
@@ -593,7 +598,7 @@ i.fa.fa-angle-left {
     float: left;
     color: #020201;
     text-shadow: 2px 0px #cfc3c3;
-    font-size: 37px;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
     padding-bottom: 0px;
@@ -604,14 +609,18 @@ i.fa.fa-angle-left {
     float: left;
     color: #361e0b;
     text-shadow: 3px 0px #cfc3c3;
-    font-size: 40px;
+    font-size: 2rem;
     text-align: center;
     font-weight: bold;
 }
-
+/* 
 .box_main:hover {
     background-color: #8d5e3e;
-}
+} */
+.box_main:hover {
+    background-color: #f5f5f5; /* Or any other color or style change */
+  }
+  
 
 .box_main:hover .border_10 {
     background-color: #ffffff;
@@ -623,6 +632,11 @@ i.fa.fa-angle-left {
 
 .box_main.active .border_10 {
     background-color: #ffffff;
+}
+.box_main::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .see_bt {
